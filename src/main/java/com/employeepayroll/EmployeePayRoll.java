@@ -1,41 +1,19 @@
 package com.employeepayroll;
 
 public class EmployeePayRoll {
-    private int id;
-    private String name;
-    private double salary;
-
-    public EmployeePayRoll(int id, String name, double salary) {
-        this.id = id;
-        this.name = name;
-        this.salary = salary;
+    public static void main(String[] args) {
+        EmployeePayRollService employeePayrollService = new EmployeePayRollService();
+        //EmployeePayRoll employeePayrollService = new EmployeePayRoll();
+        System.out.println("Welcolme to employee payRoll");
+        employeePayrollService.readEmployeeDataFromConsole();
+        employeePayrollService.writeEmployeeDataInConsole();
     }
 
-    public int getId() {
-        return id;
+    private void writeEmployeeDataInConsole() {
+
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    private void readEmployeeDataFromConsole() {
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    public String toString() {
-        return "id=" + id + ", name=" + name + ", salary=" + salary;
     }
 }
